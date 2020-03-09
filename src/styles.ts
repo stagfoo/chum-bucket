@@ -50,26 +50,48 @@ export const REQUIRED_STYLES = new Fairybread().css`
     max-width: 960px;
   }
   .page {
-    height: 90vh;
+    text-align: center;
+    /* height: 85vh; */
+    height: 100vh;
     padding-top: ${DS.gutters.md}px;
     padding-left: ${DS.gutters.md}px;
     padding-right: ${DS.gutters.md}px;
     overflow-y: scroll;
   }
+  button.red {
+    background: #FF2020;
+  }
+  button.blue {
+    background: #4255FF;
+  }
+  audio {
+    display:none;
+  }
+  button:focus {
+    outline: none;
+    opacity: 0.5;
+  }
   button {
-    border: 0;
+    overflow:hidden;
+    height: 200px;
+    color: #fff;
+    width: 200px;
+    margin: ${DS.gutters.lg}px auto;
+    border: 10px solid #efefef;
     padding: ${DS.gutters.sm}px;
     font-size: 1em;
     font-family: ${DS.fontFamily.alt};
     background: ${DS.colors.blue};
-    border-radius: 8px;
+    border-radius: 100%;
   }
 
-  .nav a {
-    padding-bottom: ${DS.gutters.lg}px;
-    padding-top: ${DS.gutters.lg}px;
-    text-align: center;
-    display:block;
+  .nav {
+    display:none;
+    height: 15vh;
+    background-image: url("ad-space.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
 `

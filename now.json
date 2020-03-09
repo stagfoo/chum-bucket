@@ -1,0 +1,12 @@
+{
+  "name": "mxr-play-buttons",
+  "version": 2,
+  "alias": "mxrplay-buttons.now.sh",
+  "github": {
+    "enabled": true,
+    "autoAlias": true
+  },
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "dist"} }
+  ]
+}
