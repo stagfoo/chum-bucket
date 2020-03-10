@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "webpack-dev-server --content-base dist --hot --inline --mode=development",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "now-build": "webpack -p"
   },
   "author": "",
   "license": "ISC",
